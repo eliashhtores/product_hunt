@@ -9,4 +9,5 @@ local_settings.py
 db.sqlite3
 /static
 /media
-../venv
+/venv
+/product_hunt/static
