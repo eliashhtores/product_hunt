@@ -2,10 +2,10 @@
 {% block content %}
 
 {% if error %}
-<br />
+<br>
 <span class="text-danger"><strong>{{ error }}</strong></span>
-<br />
-<br />
+<br>
+<br>
 {% endif %}
 
 
@@ -14,26 +14,26 @@
 <form method="POST" action="{% url 'create' %}" enctype="multipart/form-data">
   {% csrf_token %}
   Title:
-  <br />
+  <br>
   <input type="text" name="title" required="required" />
-  <br />
+  <br>
   Body:
-  <br />
+  <br>
   <input type="textbox" name="body" required="required" />
-  <br />
+  <br>
   URL:
-  <br />
+  <br>
   <input type="text" name="url" required="required" />
-  <br />
+  <br>
   Icon:
-  <br />
+  <br>
   <input type="file" name="icon" required="required" />
-  <br />
+  <br>
   Image:
-  <br />
+  <br>
   <input type="file" name="image" />
-  <br />
-  <br />
+  <br>
+  <br>
   <input type="submit" class="btn btn-primary" value="Add product" />
 
 </form>
